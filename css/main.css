@@ -25,18 +25,19 @@ section {
     padding: 100px 0;
 }
 
-h3 {
-    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-    font-style: italic;
-    font-size: 42px;
-}
-
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 50px;
     line-height: 52px;
     font-weight: 600;
     margin-bottom: 20px;
+}
+
+h3 {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-style: italic;
+    font-size: 33px;
+    line-height: 34px;
 }
 
 /*    Main Header styles    */
@@ -125,18 +126,18 @@ header .navbar-toggler {
     color: #ffffff;
 }
 
-    .nav-link {
-        font-size: 17.4px;
-        line-height: 18.1px;
-        font-weight: 600;
-        color: #ffffff;
-    }
-
-.nav-link:hover {
+.main-header .nav-link {
+    font-size: 17.4px;
+    line-height: 18.1px;
+    font-weight: 600;
     color: #ffffff;
 }
 
-.nav-link::after {
+.main-header .nav-link:hover {
+    color: #ffffff;
+}
+
+.main-header .nav-link::after {
         content: '';
         display: block;
         width: 100%;
@@ -155,13 +156,13 @@ header .navbar-toggler {
         transition: all .3s;
     }
 
-    .nav-link:hover::after {
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -ms-transform: scale(1);
-        -o-transform: scale(1);
-        transform: scale(1);
-    }
+.main-header .nav-link:hover::after {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
 
 /*    Header buttons styles    */
 
@@ -199,20 +200,97 @@ header .navbar-toggler {
 .btn-pink {
     margin-right: 25px;
     background-color: #f42267;
-    
 }
 
 .btn-violet {
     background-color: #69328e;
-
 }
 
 
+/*    Watch styles    */
+
+.watch {
+    background-image: url('../img/World Map.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+
+/*.watches {*/
+/*    padding-left: 100px;*/
+/*}*/
+
+.watch h2 {
+    letter-spacing: -2px;
+    color:  #484848;
+}
+
+.watch h3 {
+    color:  #484848;
+}
+
+.watch .nav-pills {
+    margin-bottom: 20px;
+}
+
+.watch .nav-pills .nav-item .nav-link.active {
+    background-color: #f42267;
+    color: #ffffff;
+    -webkit-box-shadow: 0 14px 16px rgba(0, 0, 0, .35);
+    -moz-box-shadow: 0 14px 16px rgba(0, 0, 0, .35);
+    box-shadow: 0 14px 16px rgba(0, 0, 0, .35);
+}
+
+.watch .nav-link {
+    padding: 14px 30px;
+    font-size: 13px;
+    line-height: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #484848;
+}
+
+.watch .nav-link:hover {
+    background-color: rgba(244, 34, 103, .5);
+}
+
+
+.watch .btn:hover {
+    -webkit-box-shadow: 0 10px 0 #ff5990;
+    -moz-box-shadow: 0 10px 0 #ff5990;
+    box-shadow: 0 10px 0 #ff5990;
+    background-color: #da1757;
+}
+
+
+
+.watch .btn-shadow {
+    padding: 15px 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+    
 /*    Common styles    */
 /*    Common styles    */
 /*    Common styles    */
 /*    Common styles    */
-/*    Common styles    */
+
+
+
+
+
+
 
 
 /*    Media styles    */
@@ -224,6 +302,10 @@ header .navbar-toggler {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+
+    section {
+        padding: 50px 0;
+    }
 
     .main-heading {
         padding: 30px 15px;
@@ -237,7 +319,6 @@ header .navbar-toggler {
         padding: 0 15px;
         z-index: 1;
         background: linear-gradient(45deg, #ed1b33 0%, #442e82 100%);
-        /*opacity: .9;*/
     }
 
     .nav-item {
@@ -262,7 +343,6 @@ header .navbar-toggler {
         font-size: 16px;
     }
 }
-
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
@@ -306,10 +386,29 @@ header .navbar-toggler {
         font-size: 40px;
     }
 
+    .watch h2 {
+        font-size: 40px;
+    }
+
+    .watch h3 {
+        font-size: 28px;
+    }
+
     .header-buttons .btn {
         display: block;
         width: 100%;
         margin-top: 25px;
+    }
+
+    .watch .btn-shadow {
+        padding: 10px 15px;
+    }
+
+    .watch .btn:hover {
+        -webkit-box-shadow: 0 5px 0 #ff5990;
+        -moz-box-shadow: 0 5px 0 #ff5990;
+        box-shadow: 0 5px 0 #ff5990;
+        background-color: #da1757;
     }
 }
 /* Extra Small Devices */
@@ -319,6 +418,16 @@ header .navbar-toggler {
         font-size: 34px;
     }
 }
+@media only screen and (max-width : 480px) {
+    .watch .nav-pills .nav-item {
+        width: 100%;
+    }
+
+    .watch .nav-pills .nav-item .nav-link {
+        padding: 8px 16px;
+    }
+}
+
 
 @media only screen and (max-width : 380px) {
     .navbar-brand {
