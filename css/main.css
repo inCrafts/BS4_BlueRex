@@ -40,6 +40,35 @@ h3 {
     line-height: 34px;
 }
 
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.btn-shadow {
+    padding: 15px 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.btn-shadow:hover {
+    color: #ffffff;
+    -webkit-box-shadow: 0 10px 0 #ff5990;
+    -moz-box-shadow: 0 10px 0 #ff5990;
+    box-shadow: 0 10px 0 #ff5990;
+    background-color: #da1757;
+}
+
 /*    Main Header styles    */
 
 header {
@@ -207,7 +236,7 @@ header .navbar-toggler {
 }
 
 
-/*    Watch styles    */
+/*    Watch section styles    */
 
 .watch {
     background-image: url('../img/World Map.png');
@@ -215,11 +244,6 @@ header .navbar-toggler {
     background-position: top center;
     background-size: cover;
 }
-
-
-/*.watches {*/
-/*    padding-left: 100px;*/
-/*}*/
 
 .watch h2 {
     letter-spacing: -2px;
@@ -254,25 +278,18 @@ header .navbar-toggler {
 .watch .nav-link:hover {
     background-color: rgba(244, 34, 103, .5);
 }
+    
+/*    Success  section styles    */
 
-
-.watch .btn:hover {
-    -webkit-box-shadow: 0 10px 0 #ff5990;
-    -moz-box-shadow: 0 10px 0 #ff5990;
-    box-shadow: 0 10px 0 #ff5990;
-    background-color: #da1757;
+.success {
+    padding: 0;
+    background-color: #4b2d7f;
+    color: #ffffff;
+    font-size: 15px;
 }
 
-
-
-.watch .btn-shadow {
-    padding: 15px 20px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    box-shadow: none;
-    text-transform: uppercase;
-    color: #ffffff;
+.success-item {
+    padding: 80px 15px;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     -ms-transition: all .5s;
@@ -280,9 +297,184 @@ header .navbar-toggler {
     transition: all .5s;
 }
 
-    
-/*    Common styles    */
-/*    Common styles    */
+.success .number {
+    margin: 30px 0 20px;
+    font-size: 50px;
+    line-height: 62.38px;
+    font-weight: 600;
+}
+
+.success h4 {
+    max-height: 70px;
+    overflow: hidden;
+}
+
+.success h4 strong {
+    font-size: 30px;
+}
+
+.success p {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.success-item:hover {
+    background-color: #40286a;
+}
+
+/*    Calling section styles    */
+
+.calling {
+    background-image: url('../img/desk.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.calling h2 {
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+
+.calling h3 {
+    font-size: 48px;
+    line-height: 50px;
+}
+
+.calling p {
+    max-width: 930px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.calling .btn {
+    margin-top: 50px;
+}
+
+/*    Services section styles    */
+
+.services h3, .services h2, .services h4 {
+    color: #484848;
+}
+
+.services p {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.services i {
+    font-size: 50px;
+}
+
+.services h4 {
+    font-size: 25px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.services .btn {
+    margin-top: 35px;
+}
+
+.services-item p {
+    font-size: 14px;
+}
+
+.embed-responsive {
+    position: relative;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#playBtn {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    cursor: pointer;
+    background-image: url('../img/play.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*    Recent works section styles    */
+
+.works {
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.works h2 {
+    color: #333333;
+}
+
+.works p {
+    max-width: 940px;
+    margin: 0 auto;
+    color: #333333;
+}
+
+/*    Recent works tabs styles    */
+
+#worksTab {
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.works .nav-pills .nav-item .nav-link.active {
+    background-color: #f42267;
+    color: #ffffff;
+    -webkit-box-shadow: 0 14px 16px rgba(0, 0, 0, .35);
+    -moz-box-shadow: 0 14px 16px rgba(0, 0, 0, .35);
+    box-shadow: 0 14px 16px rgba(0, 0, 0, .35);
+}
+
+.works .nav-link {
+    padding: 14px 30px;
+    font-size: 13px;
+    line-height: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #484848;
+}
+
+.works .nav-link:hover {
+    background-color: rgba(244, 34, 103, .5);
+}
+
+.works .btn-shadow {
+    margin-top: 100px;
+}
+
+.works-block {
+    margin-top: 30px;
+}
+
+.works-item a img {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.works-item a:hover img {
+    -webkit-box-shadow: 0 14px 30px -15px rgba(0, 0, 0, .75);
+    -moz-box-shadow: 0 14px 30px -15px rgba(0, 0, 0, .75);
+    box-shadow: 0 14px 30px -15px rgba(0, 0, 0, .75);
+}
+
+
+
+
+
+
 /*    Common styles    */
 /*    Common styles    */
 
@@ -310,6 +502,14 @@ header .navbar-toggler {
     .main-heading {
         padding: 30px 15px;
         background-color: rgba(0, 0, 0, .3);
+    }
+
+    .success-item {
+        padding: 50px 15px;
+    }
+
+    .works .btn-shadow {
+        margin-top: 50px;
     }
 }
 
@@ -404,13 +604,33 @@ header .navbar-toggler {
         padding: 10px 15px;
     }
 
-    .watch .btn:hover {
+    .watch .btn:hover, .calling .btn:hover {
         -webkit-box-shadow: 0 5px 0 #ff5990;
         -moz-box-shadow: 0 5px 0 #ff5990;
         box-shadow: 0 5px 0 #ff5990;
         background-color: #da1757;
     }
 }
+
+@media only screen and (max-width : 576px) {
+    .works-block {
+        margin-top: 0;
+    }
+
+    .works-item {
+        margin-top: 30px;
+    }
+
+    .works .btn-shadow {
+        margin-top: 100px;
+    }
+
+    .works .btn-shadow {
+        margin-top: 50px;
+    }
+}
+
+
 /* Extra Small Devices */
 @media only screen and (max-width : 540px) {
 
@@ -421,6 +641,14 @@ header .navbar-toggler {
 @media only screen and (max-width : 480px) {
     .watch .nav-pills .nav-item {
         width: 100%;
+    }
+
+    .works .nav-pills .nav-item {
+        width: 100%;
+    }
+
+    .works .nav-pills .nav-item .nav-link {
+        margin-top: 10px;
     }
 
     .watch .nav-pills .nav-item .nav-link {
