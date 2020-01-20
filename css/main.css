@@ -470,14 +470,74 @@ header .navbar-toggler {
     box-shadow: 0 14px 30px -15px rgba(0, 0, 0, .75);
 }
 
+/*    Clients section styles    */
 
+.clients {
+    background-color: #4b2d7f;
+}
 
+.row {
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
 
+.row-item {
+    justify-content: center;
+    align-items: center;
+}
 
+/*    Testimonials section styles    */
 
-/*    Common styles    */
-/*    Common styles    */
+.testimonials {
+    padding: 20px 0 0;
+    background-image: url('../img/testimonials_bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.testimonials .blockquote {
+    position: relative;
+    margin-top: 50px;
+    padding-left: 40px;
+}
+
+.testimonials .blockquote::before  {
+    content: '\201C';
+    position: absolute;
+    top: -80px;
+    left: -33px;
+    font-size: 150px;
+    float: left;
+    font-weight: 300;
+    font-style: italic;
+    color: #f42267;
+}
+
+.carousel-caption {
+    top: -250px;
+}
+
+.carousel-caption p {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.testimonials .rating {
+    margin: 40px 0 20px;
+}
+
+.testimonials cite {
+    margin-top: 15px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.blockquote-footer::before {
+    display: none;
+}
 
 
 
@@ -511,6 +571,29 @@ header .navbar-toggler {
     .works .btn-shadow {
         margin-top: 50px;
     }
+
+    .testimonials .carousel-caption {
+        top: -200px;
+    }
+
+    .testimonials .carousel-caption p {
+        font-size: 14px;
+    }
+
+    .testimonials .carousel-caption .blockquote {
+        margin-top: 30px;
+    }
+
+    .testimonials .rating {
+        margin-top: 20px;
+    }
+
+    .testimonials cite {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+
 }
 
 @media only screen and (max-width : 991px) {
@@ -559,7 +642,48 @@ header .navbar-toggler {
         margin: 0 20px;
         max-width: 100%;
     }
-}
+
+    .testimonials .carousel-caption {
+        top: -170px;
+    }
+
+    .testimonials .carousel-caption .blockquote {
+        margin-top: 15px;
+        padding-left: 20px;
+    }
+
+    .testimonials .blockquote::before  {
+        top: -60px;
+        font-size: 120px;
+    }
+
+    .testimonials h2 {
+        margin-bottom: 0;
+        font-size: 35px;
+    }
+
+    .testimonials h3 {
+        margin-bottom: 0;
+        font-size: 25px;
+    }
+
+    .testimonials .carousel-caption p {
+        font-size: 11px;
+    }
+
+    .testimonials .rating {
+        max-width: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .testimonials cite {
+        font-size: 12px;
+    }
+
+
+
+    }
 
 @media only screen and (max-width : 680px) {
     h1 {
@@ -628,6 +752,21 @@ header .navbar-toggler {
     .works .btn-shadow {
         margin-top: 50px;
     }
+
+    .clients .row {
+        margin-top: 0 !important;
+    }
+
+    .clients .row-item {
+        margin-top: 40px;
+    }
+
+    .testimonials .carousel-caption {
+        position: static;
+        width: 70%;
+        margin: auto;
+    }
+
 }
 
 
