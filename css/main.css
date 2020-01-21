@@ -162,11 +162,12 @@ header .navbar-toggler {
     color: #ffffff;
 }
 
-.main-header .nav-link:hover {
+.main-header .nav-link:hover, .social-link:hover  {
+    text-decoration: none;
     color: #ffffff;
 }
 
-.main-header .nav-link::after {
+.main-header .nav-link::after, .social-link::after {
         content: '';
         display: block;
         width: 100%;
@@ -185,7 +186,7 @@ header .navbar-toggler {
         transition: all .3s;
     }
 
-.main-header .nav-link:hover::after {
+.main-header .nav-link:hover::after, .social-link:hover::after  {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
@@ -596,15 +597,48 @@ header .navbar-toggler {
 }
 
 .contact .form-control:focus {
-    -webkit-box-shadow: 0 0 0 0 .2rem rgba(255, 255, 255, .25);
-    -moz-box-shadow: 0 0 0 0 .2rem rgba(255, 255, 255, .25);
-    box-shadow: 0 0 0 0 .2rem rgba(255, 255, 255, .25);
+    -webkit-box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+    -moz-box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
 }
 
 
+/*    Social section styles    */
 
+.social {
+    background-color: #4b2d7f;
+    color: #ffffff;
+}
 
+.social-list {
+    display: inline-grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0 140px;
+}
 
+.social-item {
+    position: relative;
+    padding: 0 15px;
+}
+
+.social-link {
+    text-decoration: none;
+    font-size: 27px;
+    line-height: 37px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.social-line {
+    position: absolute;
+    top: 0;
+    left: -2px;
+    font-size: 27px;
+    color: #7647c7;
+}
 
 
 
@@ -661,7 +695,13 @@ header .navbar-toggler {
         font-size: 18px;
     }
 
+    .social-list {
+        padding: 0 15px;
+    }
 
+    .social-link {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width : 991px) {
@@ -675,6 +715,8 @@ header .navbar-toggler {
     .nav-item {
         margin: 0 auto;
     }
+
+    .line {}
 }
 
 @media only screen and (max-width : 870px) {
@@ -752,7 +794,15 @@ header .navbar-toggler {
     .contact .form-control:first-of-type {
         margin-bottom: 20px;
     }
+
+    .social-list {
+        padding: 0 15px;
     }
+
+    .social-link {
+        font-size: 16px;
+    }
+}
 
 @media only screen and (max-width : 680px) {
     h1 {
@@ -834,6 +884,24 @@ header .navbar-toggler {
         position: static;
         width: 70%;
         margin: auto;
+    }
+
+    .social-list {
+        padding: 0 15px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .social-item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .social-link {
+        font-size: 27px;
+    }
+
+    .social-line {
+        display: none;
     }
 
 }
