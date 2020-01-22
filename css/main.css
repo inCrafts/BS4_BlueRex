@@ -46,6 +46,11 @@ h4 {
     font-weight: 400;
 }
 
+h5 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
 .btn-shadow {
     padding: 15px 20px;
     -webkit-border-radius: 10px;
@@ -640,6 +645,89 @@ header .navbar-toggler {
     color: #7647c7;
 }
 
+/*    Footer styles    */
+
+#footer {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*    Footer-info section styles    */
+
+.footer-info {
+    background-image: url('../img/World Map.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer-info_list {
+    padding-left: 10px;
+    list-style: none;
+}
+
+.footer-info h5 {
+    color: #4b2d7f;
+}
+
+.footer-info_link {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #171717;
+}
+
+.footer-info_link:hover {
+    color: #4b2d7f;
+}
+
+
+.footer-pics {
+    margin-top: 30px;
+}
+
+
+/*    Footer-copyrights section styles    */
+
+.footer-copyrights {
+    padding: 50px 0;
+    background-color: #f6f6f6;
+    font-size: 18.5px;
+    font-weight: 600;
+    color: #171717;
+}
+
+.footer-copyrights .nav-link {
+    position: relative;
+    color: #171717;
+}
+
+.footer-copyrights .nav-link.copy:hover {
+    text-decoration: none;
+    color: #171717;
+    cursor: default;
+}
+
+.footer-copyrights .nav-link.copy::before {
+    content: none;
+}
+
+
+
+
+.footer-copyrights .nav-link:hover {
+    text-decoration: underline;
+    color: #4b2d7f;
+}
+
+
+.footer-copyrights .nav-link::before {
+    content: '\00B7';
+    position: absolute;
+    left: -3px;
+
+}
+
 
 
 
@@ -802,6 +890,15 @@ header .navbar-toggler {
     .social-link {
         font-size: 16px;
     }
+
+    .footer-copyrights, .footer-info {
+        padding: 30px 0;
+    }
+
+    section.footer-info {
+        padding: 0 0 50px;
+    }
+
 }
 
 @media only screen and (max-width : 680px) {
@@ -936,5 +1033,9 @@ header .navbar-toggler {
 @media only screen and (max-width : 380px) {
     .navbar-brand {
         font-size: 30px;
+    }
+
+    .footer-copyrights .nav-link.copy {
+        font-size: 17px;
     }
 }
