@@ -10,6 +10,10 @@
 
 /*    Common styles    */
 
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     min-width: 320px;
     font-family: 'Montserrat', sans-serif;
@@ -73,6 +77,38 @@ h5 {
     box-shadow: 0 10px 0 #ff5990;
     background-color: #da1757;
 }
+
+.scroll {
+    position: fixed;
+    display: none;
+    bottom: 60px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 32px;
+    z-index: 1001;
+    color: #ffffff;
+    border: none;
+    -webkit-transition: all .5s;
+    -moz-transition: all.5s;
+    -ms-transition: all.5s;
+    -o-transition: all.5s;
+    transition: all.5s;
+    background-color: #da1757;
+    cursor: pointer;
+}
+
+.scroll:hover {
+    border: 4px solid #da1757;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #da1757;
+}
+
+/*    Preloader styles    */
 
 /*    Main Header styles    */
 
@@ -160,19 +196,19 @@ header .navbar-toggler {
     color: #ffffff;
 }
 
-.main-header .nav-link {
+#header .nav-link {
     font-size: 17.4px;
     line-height: 18.1px;
     font-weight: 600;
     color: #ffffff;
 }
 
-.main-header .nav-link:hover, .social-link:hover  {
+#header .nav-link:hover, .social-link:hover  {
     text-decoration: none;
     color: #ffffff;
 }
 
-.main-header .nav-link::after, .social-link::after {
+#header .nav-link::after, .social-link::after {
         content: '';
         display: block;
         width: 100%;
@@ -191,7 +227,7 @@ header .navbar-toggler {
         transition: all .3s;
     }
 
-.main-header .nav-link:hover::after, .social-link:hover::after  {
+#header .nav-link:hover::after, .social-link:hover::after  {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
@@ -244,27 +280,27 @@ header .navbar-toggler {
 
 /*    Watch section styles    */
 
-.watch {
+#watch {
     background-image: url('../img/World Map.png');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
 }
 
-.watch h2 {
+#watch h2 {
     letter-spacing: -2px;
     color:  #484848;
 }
 
-.watch h3 {
+#watch h3 {
     color:  #484848;
 }
 
-.watch .nav-pills {
+#watch .nav-pills {
     margin-bottom: 20px;
 }
 
-.watch .nav-pills .nav-item .nav-link.active {
+#watch .nav-pills .nav-item .nav-link.active {
     background-color: #f42267;
     color: #ffffff;
     -webkit-box-shadow: 0 14px 16px rgba(0, 0, 0, .35);
@@ -272,7 +308,7 @@ header .navbar-toggler {
     box-shadow: 0 14px 16px rgba(0, 0, 0, .35);
 }
 
-.watch .nav-link {
+#watch .nav-link {
     padding: 14px 30px;
     font-size: 13px;
     line-height: 11px;
@@ -281,20 +317,20 @@ header .navbar-toggler {
     color: #484848;
 }
 
-.watch .nav-link:hover {
+#watch .nav-link:hover {
     background-color: rgba(244, 34, 103, .5);
 }
     
 /*    Success  section styles    */
 
-.success {
+#success {
     padding: 0;
     background-color: #4b2d7f;
     color: #ffffff;
     font-size: 15px;
 }
 
-.success-item {
+#success-item {
     padding: 80px 15px;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
@@ -303,28 +339,28 @@ header .navbar-toggler {
     transition: all .5s;
 }
 
-.success .number {
+#success .number {
     margin: 30px 0 20px;
     font-size: 50px;
     line-height: 62.38px;
     font-weight: 600;
 }
 
-.success h4 {
+#success h4 {
     max-height: 70px;
     overflow: hidden;
 }
 
-.success h4 strong {
+#success h4 strong {
     font-size: 30px;
 }
 
-.success p {
+#success p {
     font-size: 15px;
     line-height: 24px;
 }
 
-.success-item:hover {
+#success-item:hover {
     background-color: #40286a;
 }
 
@@ -712,9 +748,6 @@ header .navbar-toggler {
     content: none;
 }
 
-
-
-
 .footer-copyrights .nav-link:hover {
     text-decoration: underline;
     color: #4b2d7f;
@@ -926,11 +959,11 @@ header .navbar-toggler {
         font-size: 40px;
     }
 
-    .watch h2 {
+    #watch h2 {
         font-size: 40px;
     }
 
-    .watch h3 {
+    #watch h3 {
         font-size: 28px;
     }
 
@@ -940,11 +973,11 @@ header .navbar-toggler {
         margin-top: 25px;
     }
 
-    .watch .btn-shadow {
+    #watch .btn-shadow {
         padding: 10px 15px;
     }
 
-    .watch .btn:hover, .calling .btn:hover {
+    #watch .btn:hover, .calling .btn:hover {
         -webkit-box-shadow: 0 5px 0 #ff5990;
         -moz-box-shadow: 0 5px 0 #ff5990;
         box-shadow: 0 5px 0 #ff5990;
@@ -1012,7 +1045,7 @@ header .navbar-toggler {
     }
 }
 @media only screen and (max-width : 480px) {
-    .watch .nav-pills .nav-item {
+    #watch .nav-pills .nav-item {
         width: 100%;
     }
 
@@ -1024,7 +1057,7 @@ header .navbar-toggler {
         margin-top: 10px;
     }
 
-    .watch .nav-pills .nav-item .nav-link {
+    #watch .nav-pills .nav-item .nav-link {
         padding: 8px 16px;
     }
 }
