@@ -110,6 +110,11 @@ h5 {
 
 /*    Preloader styles    */
 
+.spinner-border.text-danger {
+    width: 10rem;
+    height: 10rem;
+}
+
 .preloader {
     position: fixed;
     display: flex;
